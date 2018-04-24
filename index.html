@@ -155,9 +155,26 @@
     <article id="post-TCP协议" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/24/TCP协议/">TCP协议</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/24/TCP协议/" class="archive-article-date">
+  	<time datetime="2018-04-24T07:24:08.539Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-24</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="TCP协议建立连接-三次握手"><a href="#TCP协议建立连接-三次握手" class="headerlink" title="TCP协议建立连接 三次握手"></a>TCP协议建立连接 三次握手</h4><p>TCP(Transmission Control Protocol)传输控制协议<br><br><br>TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接<br><br><br><br>SYN(synchronous建立联机) ——– 表示建立连接<br><br><br>FIN ——– 表示关闭连接<br><br><br>ACK(acknowledgement 确认) ——– 表示响应<br><br><br>PUSH(push传送) ——– 表示有DATA数据传输<br><br><br>RST(reset重置) ——– 表示连接重置<br><br><br>URG(urgent紧急)<br><br><br>Acknowledge number(确认号码)<br><br><br><br><img src="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&amp;shareKey=7cbe8e816bb10988aa35abe07acbc2a2" alt="TCP协议连接三次握手"><br><br><br>第一次握手：<code>客户端A</code>（172.16.6.33）向<code>服务器B</code>（182.61.62.50）请求连接，发送<code>[SYN]</code>报文，并置发送序号为<code>X</code>（随机），即<code>SYN=1,Seq=X</code>。<br><br></p>
+        <h4 id="TCP协议建立连接-三次握手"><a href="#TCP协议建立连接-三次握手" class="headerlink" title="TCP协议建立连接 三次握手"></a>TCP协议建立连接 三次握手</h4><p>TCP(Transmission Control Protocol)传输控制协议<br><br><br>TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接</p>
+<p>SYN(synchronous建立联机) ——– 表示建立连接<br>FIN ——– 表示关闭连接<br>ACK(acknowledgement 确认) ——– 表示响应<br>PUSH(push传送) ——– 表示有DATA数据传输<br>RST(reset重置) ——– 表示连接重置<br>URG(urgent紧急)<br>Acknowledge number(确认号码)</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&amp;shareKey=7cbe8e816bb10988aa35abe07acbc2a2" alt="TCP协议连接三次握手"><br><br><br>第一次握手：<code>客户端A</code>（172.16.6.33）向<code>服务器B</code>（182.61.62.50）请求连接，发送<code>[SYN]</code>报文，并置发送序号为<code>X</code>（随机），即<code>SYN=1,Seq=X</code>。<br><br></p>
 <blockquote>
 <p>注意: 一个 SYN包就是仅SYN标记设为1的TCP包(参见TCP包头Resources). 认识到这点很重要，只有当B受到A发来的SYN包，才可建立连接，除此之外别无他法。因此，如果你的防火墙丢弃所有的发往外网接<br><br></p>
 </blockquote>
