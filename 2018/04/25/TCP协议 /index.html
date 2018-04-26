@@ -17,7 +17,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&shareKey=7cbe8e816bb10988aa35abe07acbc2a2">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEB1ad9de01cdab70e9b3d50e2d039f6eb5?method=download&shareKey=46ed7f4f3724862f433231801a62485d">
-<meta property="og:updated_time" content="2018-04-26T03:47:37.436Z">
+<meta property="og:updated_time" content="2018-04-26T05:36:21.503Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TCP协议">
 <meta name="twitter:description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 1. 介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——">
@@ -50,7 +50,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/images/author_img.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">lipan</a></h1>
@@ -108,7 +108,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/images/author_img.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">lipan</h1>
@@ -170,7 +170,7 @@
 
         
         <a href="/2018/04/25/TCP协议 /" class="archive-article-date">
-  	<time datetime="2018-04-25T06:06:14.391Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-25</time>
+  	<time datetime="2018-04-25T05:28:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-25</time>
 </a>
         
       </header>
@@ -195,7 +195,7 @@
 <p>完成三次握手，客户端A与服务器开始传送数</p>
 <p><img src="https://note.youdao.com/yws/api/personal/file/WEB1ad9de01cdab70e9b3d50e2d039f6eb5?method=download&amp;shareKey=46ed7f4f3724862f433231801a62485d" alt="TCP三次握手"></p>
 <h4 id="3-握手阶段分析"><a href="#3-握手阶段分析" class="headerlink" title="3. 握手阶段分析"></a>3. 握手阶段分析</h4><p>握手阶段：<br>序号　方向　　seq　　ack<br>1　　A-&gt;B　　10000　0<br>2　　B-&gt;A　　20000　10000+1=10001<br>3　　A-&gt;B　　10001　20000+1=20001</p>
-<p>解释：</p>
+<p>解释：  </p>
 <ol>
 <li>A向B发起请求，以一个随机数初始化A的Seq，这里假设<code>10000</code>，此时<code>ACK=0</code>  </li>
 <li>B收到A的连接请求后，也以一个随机数初始化B的Seq，这里假设为<code>20000</code>，意思是你的请求我收到了，我这方的数据流就从这个数开始。B此时的ACK是A的Seq加<code>1</code>，即<code>10000+1=10001</code>  </li>
@@ -206,7 +206,8 @@
 <p>24: 于是B也向A发送一个数据包，告诉A，你的上个包我收到了。B的Seq就以它收到的数据包的ACK填充，ACK是它收到的数据包的Seq加上数据包的大小（不包括以太网协议头，IP头，TCP头），以证实A发送过来的数据全收到了  </p>
 <p>25: A在收到B发过来的 ACK为41460的数据包时，一看到41460，正好是它上个数据包的Seq加上包的大小，就知道，上次发送的数据包已安全到达。于是A再发一个数据包给B。这个正在发送的数据包Seq也是他收到的数据包的ACK的填充，ACK为它收到的数据包的Seq（70000）加上包的Size（54）的填充，即ACK=70000+54-54（全是头长，没有数据项）  </p>
 <p>　　其实在握手和结束时确认号应该是对方序列号加1,传输数据时则是对方序列号加上对方携带应用层数据的长度.如果从以太网包返回来计算所加的长度,就嫌走弯路了.<br>　　另外,如果对方没有数据过来,则自己的确认号不变,序列号为上次的序列号加上本次应用层数据发送长度.</p>
-
+<!-- html文本注释 -->
+<!--参考：http://blog.chinaunix.net/uid-25513153-id-187780.html-->
       
 
       
@@ -298,6 +299,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/04/26/基本类型数据的数值范围/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          基本类型数据的数值范围
+        
+      </div>
+    </a>
   
   
     <a href="/2018/04/19/hello-world-1/" id="article-nav-older" class="article-nav-link-wrap">
