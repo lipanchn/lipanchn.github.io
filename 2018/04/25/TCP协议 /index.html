@@ -8,19 +8,19 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>TCP协议 | Hello World!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——– 表示响应PUSH(push传送) ——– 表示有DATA数据">
+  <meta name="description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 1. 介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——">
 <meta property="og:type" content="article">
 <meta property="og:title" content="TCP协议">
-<meta property="og:url" content="http://yoursite.com/2018/04/24/TCP协议/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/04/25/TCP协议 /index.html">
 <meta property="og:site_name" content="Hello World!">
-<meta property="og:description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——– 表示响应PUSH(push传送) ——– 表示有DATA数据">
+<meta property="og:description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 1. 介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&shareKey=7cbe8e816bb10988aa35abe07acbc2a2">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEB1ad9de01cdab70e9b3d50e2d039f6eb5?method=download&shareKey=46ed7f4f3724862f433231801a62485d">
-<meta property="og:updated_time" content="2018-04-24T07:28:38.861Z">
+<meta property="og:updated_time" content="2018-04-26T03:47:37.436Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TCP协议">
-<meta name="twitter:description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——– 表示响应PUSH(push传送) ——– 表示有DATA数据">
+<meta name="twitter:description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 1. 介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——">
 <meta name="twitter:image" content="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&shareKey=7cbe8e816bb10988aa35abe07acbc2a2">
   
     <link rel="alternative" href="/atom.xml" title="Hello World!" type="application/atom+xml">
@@ -157,7 +157,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-TCP协议" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-TCP协议 " class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
@@ -169,34 +169,43 @@
   
 
         
-        <a href="/2018/04/24/TCP协议/" class="archive-article-date">
-  	<time datetime="2018-04-24T07:24:08.539Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-24</time>
+        <a href="/2018/04/25/TCP协议 /" class="archive-article-date">
+  	<time datetime="2018-04-25T06:06:14.391Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-25</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="TCP协议建立连接-三次握手"><a href="#TCP协议建立连接-三次握手" class="headerlink" title="TCP协议建立连接 三次握手"></a>TCP协议建立连接 三次握手</h4><p>TCP(Transmission Control Protocol)传输控制协议<br><br><br>TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接</p>
-<p>SYN(synchronous建立联机) ——– 表示建立连接<br>FIN ——– 表示关闭连接<br>ACK(acknowledgement 确认) ——– 表示响应<br>PUSH(push传送) ——– 表示有DATA数据传输<br>RST(reset重置) ——– 表示连接重置<br>URG(urgent紧急)<br>Acknowledge number(确认号码)</p>
-<p><img src="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&amp;shareKey=7cbe8e816bb10988aa35abe07acbc2a2" alt="TCP协议连接三次握手"><br><br><br>第一次握手：<code>客户端A</code>（172.16.6.33）向<code>服务器B</code>（182.61.62.50）请求连接，发送<code>[SYN]</code>报文，并置发送序号为<code>X</code>（随机），即<code>SYN=1,Seq=X</code>。<br><br></p>
+        <h3 id="TCP协议建立连接-三次握手"><a href="#TCP协议建立连接-三次握手" class="headerlink" title="TCP协议建立连接 三次握手"></a>TCP协议建立连接 三次握手</h3><p>TCP(Transmission Control Protocol)传输控制协议<br>TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接</p>
+<h4 id="1-介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示"><a href="#1-介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示" class="headerlink" title="1. 介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示"></a>1. 介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示</h4><p>SYN(synchronous建立联机) ——– 表示建立连接<br>FIN ——– 表示关闭连接<br>ACK(acknowledgement 确认) ——– 表示响应<br>PUSH(push传送) ——– 表示有DATA数据传输<br>RST(reset重置) ——– 表示连接重置<br>URG(urgent紧急)<br>Acknowledge number(确认号码)</p>
+<h4 id="2-三次握手步骤"><a href="#2-三次握手步骤" class="headerlink" title="2. 三次握手步骤"></a>2. 三次握手步骤</h4><p><img src="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&amp;shareKey=7cbe8e816bb10988aa35abe07acbc2a2" alt="TCP协议连接三次握手"></p>
+<p>第一次握手：<code>客户端A</code>（172.16.6.33）向<code>服务器B</code>（182.61.62.50）请求连接，发送<code>[SYN]</code>报文，并置发送序号为<code>X</code>（随机），即<code>SYN=1,Seq=X</code>。</p>
 <blockquote>
-<p>注意: 一个 SYN包就是仅SYN标记设为1的TCP包(参见TCP包头Resources). 认识到这点很重要，只有当B受到A发来的SYN包，才可建立连接，除此之外别无他法。因此，如果你的防火墙丢弃所有的发往外网接<br><br></p>
+<p>注意: 一个 SYN包就是仅SYN标记设为1的TCP包(参见TCP包头Resources). 认识到这点很重要，只有当B受到A发来的SYN包，才可建立连接，除此之外别无他法。因此，如果你的防火墙丢弃所有的发往外网接口的SYN包，那么你将不能让外部任何主机主动建立连接。</p>
 </blockquote>
-<p>第二次握手：<code>服务器B</code>收到请求后要确认连接信息，向<code>客户端A</code>发送<code>[SYN,ACK]</code>报文，并置发送序号为<code>Y</code>（随机），确认序号为<code>X+1</code>，即<code>SYN=1，Seq=Y，ACK=(X+1)</code>。<br><br></p>
+<p>第二次握手：<code>服务器B</code>收到请求后要确认连接信息，向<code>客户端A</code>发送<code>[SYN,ACK]</code>报文，并置发送序号为<code>Y</code>（随机），确认序号为<code>X+1</code>，即<code>SYN=1，Seq=Y，ACK=(X+1)</code>。</p>
 <blockquote>
-<p>注意: SYN/ACK包是仅SYN 和 ACK 标记为1的包.<br><br></p>
+<p>注意: SYN/ACK包是仅SYN 和 ACK 标记为1的包.</p>
 </blockquote>
-<p>但三次握手：<code>客户端A</code>收到后检查<code>ACK</code>是否正确，即第一次发送的<code>Seq( = X) + 1</code>，<code>客户端A</code>会再发送<code>[ACK]</code>报文，并置发送序号为<code>Z</code>，在确认序号为<code>Y+1</code>，即<code>ACK = Y + 1 Seq = Z</code>，<code>主机B</code>收到后确认<code>Seq</code>值与<code>ACK</code>值则连接建立成功。<br><br></p>
+<p>第三次握手：<code>客户端A</code>收到后检查<code>ACK</code>是否正确，即第一次发送的<code>Seq( = X) + 1</code>，<code>客户端A</code>会再发送<code>[ACK]</code>报文，并置发送序号为<code>Z</code>，在确认序号为<code>Y+1</code>，即<code>ACK = Y + 1 Seq = Z</code>，<code>主机B</code>收到后确认<code>Seq</code>值与<code>ACK</code>值则连接建立成功。</p>
 <blockquote>
-<p>ACK包就是仅ACK 标记设为1的TCP包. 需要注意的是当三此握手完成、连接建立以后，TCP连接的每个包都会设置ACK位<br><br></p>
+<p>ACK包就是仅ACK 标记设为1的TCP包. 需要注意的是当三此握手完成、连接建立以后，TCP连接的每个包都会设置ACK位</p>
 </blockquote>
-<p>完成三次握手，客户端A与服务器开始传送数<br><br><br><br>口的SYN包，那么你将不能让外部任何主机主动建立连接。<br><br><br><br><img src="https://note.youdao.com/yws/api/personal/file/WEB1ad9de01cdab70e9b3d50e2d039f6eb5?method=download&amp;shareKey=46ed7f4f3724862f433231801a62485d" alt="TCP三次握手"><br><br><br>握手阶段：<br><br>序号　方向　　seq　　ack<br><br>1　　A-&gt;B　　10000　0<br><br>2　　B-&gt;A　　20000　10000+1=10001<br><br>3　　A-&gt;B　　10001　20000+1=20001<br><br><br><br>解释：</p>
+<p>完成三次握手，客户端A与服务器开始传送数</p>
+<p><img src="https://note.youdao.com/yws/api/personal/file/WEB1ad9de01cdab70e9b3d50e2d039f6eb5?method=download&amp;shareKey=46ed7f4f3724862f433231801a62485d" alt="TCP三次握手"></p>
+<h4 id="3-握手阶段分析"><a href="#3-握手阶段分析" class="headerlink" title="3. 握手阶段分析"></a>3. 握手阶段分析</h4><p>握手阶段：<br>序号　方向　　seq　　ack<br>1　　A-&gt;B　　10000　0<br>2　　B-&gt;A　　20000　10000+1=10001<br>3　　A-&gt;B　　10001　20000+1=20001</p>
+<p>解释：</p>
 <ol>
-<li>A向B发起请求，以一个随机数初始化A的Seq，这里假设10000，此时ACK=0</li>
-<li>B收到A的连接请求后，也以一个随机数初始化B的Seq，这里假设为20000，意思是你的请求我收到了，我这方的数据流就从这个数开始。A此时的ACK是B的Seq加1，即20000+1=20001</li>
-<li>A收到B的回复后，它的Seq是它的上个请求的Seq加1,即10000+1=10001，意思也是你的请求我收到了，我这房的数据流就从这个数开始。A此时的ACK是B的Seq加1即20000+1=20001</li>
+<li>A向B发起请求，以一个随机数初始化A的Seq，这里假设<code>10000</code>，此时<code>ACK=0</code>  </li>
+<li>B收到A的连接请求后，也以一个随机数初始化B的Seq，这里假设为<code>20000</code>，意思是你的请求我收到了，我这方的数据流就从这个数开始。B此时的ACK是A的Seq加<code>1</code>，即<code>10000+1=10001</code>  </li>
+<li>A收到B的回复后，它的Seq是它的上个请求的Seq加<code>1</code>,即<code>10000+1=10001</code>，意思也是你的请求我收到了，我这房的数据流就从这个数开始。 A此时的ACK是B的Seq加<code>1</code>，即<code>20000+1=20001</code>  </li>
 </ol>
+<h4 id="4-数据传输阶段分析"><a href="#4-数据传输阶段分析" class="headerlink" title="4. 数据传输阶段分析"></a>4. 数据传输阶段分析</h4><p>序号　　方向　　seq　 ack　 size<br>23　　　A-&gt;B　40000 70000　1514<br>24　　　B-&gt;A　70000 40000+1514-54=41460　54<br>25　　　A-&gt;B　41460 70000+54-54=70000　1514<br>26　　　B-&gt;A　70000 41460+1514-54=42920　54  </p>
+<p>23: B收到A发送的Seq=40000 ack=70000 size=1514的数据包  </p>
+<p>24: 于是B也向A发送一个数据包，告诉A，你的上个包我收到了。B的Seq就以它收到的数据包的ACK填充，ACK是它收到的数据包的Seq加上数据包的大小（不包括以太网协议头，IP头，TCP头），以证实A发送过来的数据全收到了  </p>
+<p>25: A在收到B发过来的 ACK为41460的数据包时，一看到41460，正好是它上个数据包的Seq加上包的大小，就知道，上次发送的数据包已安全到达。于是A再发一个数据包给B。这个正在发送的数据包Seq也是他收到的数据包的ACK的填充，ACK为它收到的数据包的Seq（70000）加上包的Size（54）的填充，即ACK=70000+54-54（全是头长，没有数据项）  </p>
+<p>　　其实在握手和结束时确认号应该是对方序列号加1,传输数据时则是对方序列号加上对方携带应用层数据的长度.如果从以太网包返回来计算所加的长度,就嫌走弯路了.<br>　　另外,如果对方没有数据过来,则自己的确认号不变,序列号为上次的序列号加上本次应用层数据发送长度.</p>
 
       
 
@@ -276,7 +285,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/24/TCP协议/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/04/25/TCP协议 /" alt="微信分享二维码">
     </div>
 </div>
 
