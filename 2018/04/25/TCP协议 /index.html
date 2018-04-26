@@ -17,7 +17,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEB7465f43f4cca8a994a075b3fd2f7b3d6?method=download&shareKey=7cbe8e816bb10988aa35abe07acbc2a2">
 <meta property="og:image" content="https://note.youdao.com/yws/api/personal/file/WEB1ad9de01cdab70e9b3d50e2d039f6eb5?method=download&shareKey=46ed7f4f3724862f433231801a62485d">
-<meta property="og:updated_time" content="2018-04-26T06:08:29.757Z">
+<meta property="og:updated_time" content="2018-04-26T06:37:49.369Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="TCP协议">
 <meta name="twitter:description" content="TCP协议建立连接 三次握手TCP(Transmission Control Protocol)传输控制协议TCP是主机对主机层的传输控制协议，提供可靠的连接服务，采用三次握手确认建立一个连接 1. 介绍TCP层的几个FLAGS字段，这个字段有如下的几种标示SYN(synchronous建立联机) ——– 表示建立连接FIN ——– 表示关闭连接ACK(acknowledgement 确认) ——">
@@ -195,7 +195,6 @@
 <p>完成三次握手，客户端A与服务器开始传送数</p>
 <p><img src="https://note.youdao.com/yws/api/personal/file/WEB1ad9de01cdab70e9b3d50e2d039f6eb5?method=download&amp;shareKey=46ed7f4f3724862f433231801a62485d" alt="TCP三次握手"></p>
 <h4 id="3-握手阶段分析"><a href="#3-握手阶段分析" class="headerlink" title="3. 握手阶段分析"></a>3. 握手阶段分析</h4><p>握手阶段：<br>序号　方向　　seq　　ack<br>1　　A-&gt;B　　10000　0<br>2　　B-&gt;A　　20000　10000+1=10001<br>3　　A-&gt;B　　10001　20000+1=20001</p>
-<p>more</p>
 <p>解释：  </p>
 <ol>
 <li>A向B发起请求，以一个随机数初始化A的Seq，这里假设<code>10000</code>，此时<code>ACK=0</code>  </li>
